@@ -108,9 +108,9 @@ const LandingSection = () => {
               </FormControl>
               <Button
                 type="submit"
-                colorScheme={!formik.isValid ? "red" : "purple"}
+                colorScheme="purple"
                 width="full"
-                disabled={isLoading || !formik.isValid}
+                disabled={isLoading}
               >
                 {isLoading ? <Spinner /> : "Submit"}
               </Button>
